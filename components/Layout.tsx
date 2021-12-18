@@ -10,8 +10,9 @@ const Layout = ({ children }: LayoutProps) => {
     <Container>
       <Header>
         <Nav>
-          <Link href="/">HOME</Link>
-          <Link href="/basic">BASIC</Link>
+          <Link href="/">Home</Link>
+          <Link href="/basic">Basic</Link>
+          <Link href="/static-generation">StaticGeneration</Link>
         </Nav>
       </Header>
       <Main>{children}</Main>
