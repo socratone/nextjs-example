@@ -11,7 +11,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Header>
         <Nav>
           <Link href="/">Home</Link>
-          <Link href="/basic">Basic</Link>
+          <Link href="/route">Route</Link>
           <Link href="/static-generation">StaticGeneration</Link>
         </Nav>
       </Header>
