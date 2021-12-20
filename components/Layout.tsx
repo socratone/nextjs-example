@@ -13,6 +13,7 @@ const Layout = ({ children }: LayoutProps) => {
           <Link href="/">Home</Link>
           <Link href="/route">Route</Link>
           <Link href="/static-generation">StaticGeneration</Link>
+          <Link href="/server-side-rendering">ServerSideRendering</Link>
         </Nav>
       </Header>
       <Main>{children}</Main>
