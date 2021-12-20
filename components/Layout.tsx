@@ -15,6 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
           <Link href="/static-generation">StaticGeneration</Link>
           <Link href="/server-side-rendering">ServerSideRendering</Link>
           <Link href="/static-paths">StaticPaths</Link>
+          <Link href="/post">Post</Link>
         </Nav>
       </Header>
       <Main>{children}</Main>
