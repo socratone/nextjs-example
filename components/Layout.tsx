@@ -16,6 +16,7 @@ const Layout = ({ children }: LayoutProps) => {
           <Link href="/server-side-rendering">ServerSideRendering</Link>
           <Link href="/static-paths">StaticPaths</Link>
           <Link href="/post">Post</Link>
+          <Link href="/head">Head</Link>
         </Nav>
       </Header>
       <Main>{children}</Main>
