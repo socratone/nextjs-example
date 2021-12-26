@@ -9,7 +9,12 @@ const Date = () => {
   let month = slug[0];
   let day = slug[1];
 
-  return <h1>{`${month}월 ${day}일`}</h1>;
+  return (
+    <>
+      <h1>[...slug].tsx</h1>
+      <p>{`${month}월 ${day}일`}</p>
+    </>
+  );
 };
 
 export default Date;

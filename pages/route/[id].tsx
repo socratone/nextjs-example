@@ -3,7 +3,12 @@ import { useRouter } from 'next/router';
 const Detail = () => {
   const router = useRouter();
 
-  return <h1>{router.query.id}</h1>;
+  return (
+    <>
+      <h1>[id].tsx</h1>
+      <p>{router.query.id}</p>
+    </>
+  );
 };
 
 export default Detail;

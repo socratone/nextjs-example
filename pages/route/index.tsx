@@ -12,10 +12,18 @@ const Basic = () => {
     <>
       <h1>Route</h1>
       <ul>
-        <Item onClick={() => handleClick('1')}>Route 1</Item>
-        <Item onClick={() => handleClick('2')}>Route 2</Item>
-        <Item onClick={() => handleClick('date/12/20')}>12/20</Item>
-        <Item onClick={() => handleClick('date/12/25')}>12/25</Item>
+        <Item onClick={() => handleClick('1')}>
+          Dynamic Route가 하나일 때 1
+        </Item>
+        <Item onClick={() => handleClick('2')}>
+          Dynamic Route가 하나일 때 2
+        </Item>
+        <Item onClick={() => handleClick('12/20')}>
+          Dynamic Route가 둘 이상일 때 12/20
+        </Item>
+        <Item onClick={() => handleClick('12/25')}>
+          Dynamic Route가 둘 이상일 때 12/25
+        </Item>
       </ul>
     </>
   );
