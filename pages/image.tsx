@@ -3,12 +3,12 @@ import Image from 'next/image';
 /**
  * 사용자가 assets에 접근할 수 있으려면 public 폴더에 이미지 파일을 둬야 한다.
  */
-const Assets = () => {
+const ImagePage = () => {
   return (
     <>
-      <h1>Assets</h1>
+      <h1>Image</h1>
       <Image
-        src="/assets/images/developer.jpg"
+        src="/images/developer.jpg"
         alt="developer"
         width="640"
         height="427"
@@ -17,4 +17,4 @@ const Assets = () => {
   );
 };
 
-export default Assets;
+export default ImagePage;

@@ -1,3 +1,4 @@
+// 모든 global css 파일은 여기서 import
 import '../styles/globals.css';
 import type { AppProps } from 'next/app';
 import Layout from '../components/Layout';
