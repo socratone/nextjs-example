@@ -4,7 +4,7 @@ const Home: NextPage = () => {
   return (
     <>
       <h1>Home</h1>
-      <p>{process.env.phase}</p>
+      <p>{process.env.NEXT_PUBLIC_PHASE}</p>
     </>
   );
 };
