@@ -9,7 +9,11 @@ function MyApp({ Component, pageProps }: AppProps) {
     // Layout을 모든 페이지에 적용한다.
     <Layout>
       <Head>
-        {/* 아래 meta 태그는 개별적으로 설정한 태그와 중복된 채 모든 페이지에 적용된다. */}
+        {/* Head는 여럿이 나와도 합쳐지고 마지막에 나오는 태그가 결과값이 된다. */}
+        {/* 그러므로 여기서 global한 title과 meta를 설정하고 */}
+        {/* 개별 페이지에서 필요한 경우 title과 meta를 다시 설정할 수 있다. */}
+        <title>NextJS Example</title>
+        <meta name="description" content="NextJS Tutorial" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <Component {...pageProps} />
