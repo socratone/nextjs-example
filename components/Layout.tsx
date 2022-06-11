@@ -29,12 +29,13 @@ const Layout = ({ children }: LayoutProps) => {
 const Container = styled.div``;
 
 const Header = styled.header`
-  height: 40px;
+  padding: 10px 0;
   background: #111;
 `;
 
 const Nav = styled.nav`
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   max-width: 800px;
   margin: 0 auto;
