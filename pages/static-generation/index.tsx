@@ -16,6 +16,16 @@ const StaticGeneration = ({ data }: StaticGenerationProps) => {
 // server에서 돌아가기 때문에 fs와 같은 node에서만 쓸 수 있는 라이브러리도 쓸 수 있다.
 export const getStaticProps = async () => {
   // fetch
+
+  /**
+   * ## Error handling and revalidation
+   *
+   * If there is an error inside getStaticProps when handling background regeneration,
+   * or you manually throw an error, the last successfully generated page will continue to show.
+   *
+   * https://nextjs.org/docs/basic-features/data-fetching/incremental-static-regeneration#error-handling-and-revalidation
+   */
+
   return {
     props: {
       data: 'hello world',
